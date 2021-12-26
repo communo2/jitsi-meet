@@ -207,7 +207,7 @@ class WelcomePage extends AbstractWelcomePage {
                         <span className = 'header-text-subtitle'>
                             { t('welcomepage.headerSubtitle')}
                         </span>
-                        <div id = 'enter_room'>
+ { /**                       <div id = 'enter_room'>
                             <div className = 'enter-room-input-container'>
                                 <form onSubmit = { this._onFormSubmit }>
                                     <input
@@ -243,7 +243,7 @@ class WelcomePage extends AbstractWelcomePage {
                             </button>
                         </div>
 
-                        { _moderatedRoomServiceUrl && (
+ */}                    { _moderatedRoomServiceUrl && (
                             <div id = 'moderated-meetings'>
                                 <p>
                                     {
