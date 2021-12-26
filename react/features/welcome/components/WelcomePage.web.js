@@ -255,7 +255,7 @@ class WelcomePage extends AbstractWelcomePage {
                     </div>
                 </div>
 
-                <div className = 'welcome-cards-container'>
+                {/* <div className = 'welcome-cards-container'>
                     <div className = 'welcome-card-row'>
                         <div className = 'welcome-tabs welcome-card welcome-card--blue'>
                             { this._renderTabs() }
@@ -272,7 +272,7 @@ class WelcomePage extends AbstractWelcomePage {
                             className = 'welcome-page-content'
                             ref = { this._setAdditionalContentRef } />
                         : null }
-                </div>
+                </div> */}
                 { DISPLAY_WELCOME_FOOTER && this._renderFooter()}
             </div>
 
@@ -345,7 +345,7 @@ class WelcomePage extends AbstractWelcomePage {
         const { t } = this.props;
         const {
             MOBILE_DOWNLOAD_LINK_ANDROID,
-            MOBILE_DOWNLOAD_LINK_F_DROID,
+            // MOBILE_DOWNLOAD_LINK_F_DROID,
             MOBILE_DOWNLOAD_LINK_IOS
         } = interfaceConfig;
 
@@ -368,13 +368,13 @@ class WelcomePage extends AbstractWelcomePage {
                                 alt = { t('welcomepage.mobileDownLoadLinkAndroid') }
                                 src = './images/google-play-badge.png' />
                         </a>
-                        <a
+                        { /* <a
                             className = 'welcome-badge'
                             href = { MOBILE_DOWNLOAD_LINK_F_DROID }>
                             <img
                                 alt = { t('welcomepage.mobileDownLoadLinkFDroid') }
                                 src = './images/f-droid-badge.png' />
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
